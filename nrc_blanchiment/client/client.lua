@@ -38,7 +38,7 @@ CreateThread(function()
 
             if dist <= 3 then
                 interval = 0
-                --Visual.Subtitle("Appuyer sur [~r~E~s~] pour commencer un ~r~Gofast", 1)
+                Visual.Subtitle("Appuyer sur [~r~E~s~] pour commencer un ~r~Gofast", 1)
                 DrawMarker(22, pos[k].x + 1, pos[k].y, pos[k].z, 0.0, 0.0, 0.0, 0.0,0.0,0.0, 0.5, 0.5, 0.5, 255, 0, 0, 255, false, true, p19, true)
             end
 
