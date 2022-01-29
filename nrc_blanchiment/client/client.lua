@@ -2,29 +2,6 @@ ESX = nil
 
 TriggerEvent("esx:getSharedObject", function(obj) ESX = obj end)
 
-local isMenuOpen = false 
-
-local blanchiment_menu = RageUI.CreateMenu(nil, "Blanchiment")
-blanchiment_menu.Closed = function()
-    isMenuOpen = false
-end
-
-function MenuBlanchiment()
-    if not isMenuOpen then
-        isMenuOpen = true 
-        RageUI.Visible(blanchiment_menu, true)
-        CreateThread(function()
-            while isMenuOpen do 
-                RageUI.IsVisible(blanchiment_menu, function()
-
-
-                end)
-            Wait(0)
-            end
-        end)
-    end
-end
-
 CreateThread(function()
     while true do 
         local interval = 250 
